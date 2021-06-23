@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<nav>
+    <a href="index.html">retour</a>
+</nav>
+<body>
+    <form action="/send" method="POST">
+        <div>
+            <label for="name">Nom:</label>
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label for="firstname">Prenom:</label>
+            <input type="text" name="firstname" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Téléphone:</label>
+            <input type="tel" name="phone" placeholder="votre numéro de téléphone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}|[0-9]{10}" required><br>
+            <small>Format: 01-29-87-15-46 or 145-78-964</small>
+        </div>
+        <div>
+            <label for="choice">Canal de communication préféré:</label>
+            <select name="choice" required>
+                <option value="email">Email</option>
+                <option value="phone">Téléphone</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="message" rows="10" cols="50">Entrez votre message ICI.</textarea>           
+        </div>
+        <input type="submit" value="Envoyer">
+    </form>
+
+
+    
+</body>
+</html>
