@@ -23,12 +23,13 @@ body h1 {
 /*
     Modify li
 */
-
+ul {
+    display: inline;
+}
 ul li {
     list-style-type: none;
     margin: 10px;
 }
-
 .item {
     text-align: center;
     background-color: white;
